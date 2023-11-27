@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -21,10 +19,26 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.arielgr.click2callmobile",
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAPTURE_AUDIO_OUTPUT",
+        "android.permission.FOREGROUND_SERVICE_MICROPHONE",
+        "android.permission.MANAGE_DEVICE_POLICY_MICROPHONE",
+        "android.permission.MANAGE_DEVICE_POLICY_AUDIO_OUTPUT",
+        "android.permission.MODIFY_AUDIO_SETTINGS",
+        "android.permission.READ_MEDIA_AUDIO", 
+        "android.permission-group.MICROPHONE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f62ec115-fb3c-4739-9cf4-1517adab5417"
+      }
     }
   }
 }
